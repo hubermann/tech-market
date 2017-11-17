@@ -11,6 +11,6 @@ class BackendController extends Controller
 
 	public function index()
 	{
-		return View('layouts.backend');
+		echo "Backendcontroller#index";#return View('layouts.backend.dashboard');
 	}
 }

@@ -11,8 +11,8 @@
 |
 */
 
-
 Auth::routes();
+
 
 Route::group(['prefix' => 'backend'], function(){
 	//Root
@@ -65,9 +65,9 @@ Route::group(['prefix' => 'backend'], function(){
 
 
 
-
-
 Route::get('/', 'FrontendController@index')->name('home');
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/formulario', 'HomeController@formulario')->name('formulario');
 

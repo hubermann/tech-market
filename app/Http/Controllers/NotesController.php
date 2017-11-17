@@ -11,11 +11,12 @@ use App\Note;
 class NotesController extends Controller
 {
     
-		public function index()
-		{
-			$notes = Note::all();
-			return View('backend.notes.all', ['notes' => $notes]);
-		}
+    public function index()
+    {
+    	$notes = Note::all();
+    	return View('backend.notes.all', ['notes' => $notes]);
+    }
+    
     public function newNote()
     {
     	return View('backend.notes.new');
